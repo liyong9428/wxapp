@@ -1,0 +1,38 @@
+/**app.wxss**/
+.sv{
+   height:1100rpx;
+}
+.page-loading{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:14px;
+	padding-top:20px;
+}
+
+.page-loading .img-loading{
+	width:30rpx;
+	height:30rpx;
+}
+.item {
+   display: flex;
+   width: 730rpx;
+   margin: 0 auto;
+   padding-bottom: 20rpx;
+   font-size: 14px;
+}
+.left {
+   width: 200Rpx;
+   height: 250rpx;
+   margin-right: 20rpx;
+}
+.left image {
+   width: 200rpx;
+   height: 250rpx;
+}
+.right {
+   flex-grow: 1;
+}
+.right .row {
+   padding: 0 0 8px;
+}

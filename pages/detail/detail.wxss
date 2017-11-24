@@ -1,0 +1,13 @@
+.summary {
+   width: 710rpx;
+   padding: 0 20rpx;
+   font-size: 15px;
+}
+.banner {
+   display: flex;
+   width: 710rpx;
+   margin: 0 auto 10px;
+   padding-top: 10px;
+   padding-bottom: 20rpx;
+   font-size: 14px;
+}

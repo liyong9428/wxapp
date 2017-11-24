@@ -1,0 +1,28 @@
+<view>
+   <view class="page-loading" style="padding-top: 5px" wx:if="{{showMore}}">
+		<image class="img-loading" src="/image/1.gif" />
+		<text>加载中...</text>
+	</view>
+   <view class="banner">
+      <view class="left">
+         <image src="{{detail.images.small}}" mode="aspectFill" />
+      </view>
+      <view class="right">
+         <view class="row">{{detail.title}}</view>
+         <view class="row">
+            <text style="margin-right: 10px;">评分: </text>{{detail.rating.average}}</view>
+         <view class="row">
+            <text style="margin-right: 5px;">导演: </text>
+            <text style="margin-right: 5px;display: inline-block" wx:for="{{detail.casts}}" wx:key="id" wx:for-item="i">{{i.name}}</text>
+         </view>
+         <view class="row">
+            <text style="margin-right: 5px;">主演: </text>
+            <text style="margin-right: 5px;display: inline-block" wx:for="{{detail.directors}}" wx:key="id" wx:for-item="i">{{i.name}}</text>
+         </view>
+      </view>
+   </view>
+   <view class="summary">
+      <text style="display:block;padding-bottom:10px">剧情简介</text>
+      <text style="text-indent: 20px">{{detail.summary}}</text>
+   </view>
+</view>
